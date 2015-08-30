@@ -12,3 +12,9 @@ This is also old and stupid code.
 Will obviously only run on a Mac (for now). Either throw it into a playground, but be aware that this is bogged down by all the instruments and stuff (also for now) and might run a lot better actually compiled.
 
 They can also be run on the commandline with `xcrun swift path/to/file` or `xcrun swiftc path/to/file` (to compile it). You might need to select the Xcode beta version first with `sudo xcode-select -switch /Applications/Xcode6-Beta.app/Contents/Developer`.
+
+### Clojure
+
+Just playing around here. If you're an experienced functional programmer, please be easy on my code. I've never *really* done functional stuff before.
+
+Code can be executed with `lein exec file.clj`. The [exec plugin](https://github.com/kumarshantanu/lein-exec) for leiningen is needed though.

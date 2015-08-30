@@ -1,6 +1,10 @@
 ## Project Euler
 
-These are my solutions for the problems from [Project Euler](http://projecteuler.net/). Judge me on the implementations if you feel like it, but please regard the timestamp of the commit. Not sure if I'll fix old smelly code.
+![](https://projecteuler.net/profile/kiliankoe.png)
+
+These are my solutions for the problems from [Project Euler](http://projecteuler.net/). Judge me on the implementations if you feel like it, but please regard the timestamp of the commit. Not sure if I'll fix old and smelly code. I usually touch these problems to get familiar with a language or its specific features (or in the case of C, programming in general).
+
+There's also a few similar problems on [4Clojure](http://www.4clojure.com/user/kiliankoe) specifically for... well... Clojure.
 
 ### C
 
@@ -9,12 +13,14 @@ This is also old and stupid code.
 
 ### Swift
 
-Will obviously only run on a Mac (for now). Either throw it into a playground, but be aware that this is bogged down by all the instruments and stuff (also for now) and might run a lot better actually compiled.
+Will obviously only run on a Mac (for now). Just throw it into a playground or compile it directly, whatever you prefer.
 
-They can also be run on the commandline with `xcrun swift path/to/file` or `xcrun swiftc path/to/file` (to compile it). You might need to select the Xcode beta version first with `sudo xcode-select -switch /Applications/Xcode6-Beta.app/Contents/Developer`.
+Everything should also run on the commandline with `xcrun swift file.swift` or `xcrun swiftc file.swift` (to compile it). You might need to select the correct version of Xcode though first via `sudo xcode-select -switch /Applications/Xcode(6/7/whatever-Beta).app/Contents/Developer`.
+
+These files will probably contain outdated Swift syntax, so forgive me if it doesn't run with the most current version of the swift runtime/compiler.
 
 ### Clojure
 
-Just playing around here. If you're an experienced functional programmer, please be easy on my code. I've never *really* done functional stuff before.
+Just playing around here. If you're an experienced functional programmer, please be easy on my code. I've never *really* done purely functional stuff before this.
 
-Code can be executed with `lein exec file.clj`. The [exec plugin](https://github.com/kumarshantanu/lein-exec) for leiningen is needed though.
+Code should be able to execute with `lein exec file.clj`. The [exec plugin](https://github.com/kumarshantanu/lein-exec) for leiningen is needed though.

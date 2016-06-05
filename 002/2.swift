@@ -27,4 +27,4 @@ while a < 4000000 {
     b = c
 }
 
-println(sum)
+print(sum)

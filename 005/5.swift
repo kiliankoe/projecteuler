@@ -8,14 +8,15 @@ let range = 20
 var primefactors = [Int: Int]()
 
 // Find all the prime factors and the amount of their occurrences of a given
-// number and return a dictionary. Also includes multiples, 
+// number and return a dictionary. Also includes multiples,
 // e.g. 18 -> [2: 1, 3: 2]
-func findAllFactors (var number: Int) -> [Int: Int] {
+func findAllFactors (number: Int) -> [Int: Int] {
+    var number = number
     var factors = [Int: Int]()
-    for var i = 2; i <= number; i++ {
+    for var i in 2...number {
         if number % i == 0 {
             if var factor = factors[i] {
-                factor++
+                factor += 1
                 factors[i] = factor
             } else {
                 factors[i] = 1
@@ -29,7 +30,7 @@ func findAllFactors (var number: Int) -> [Int: Int] {
 
 // Loop through all numbers between 2 and the range and add all their
 // prime factors to a dictionary.
-for var i = 2; i <= range; i++ {
+for i in 2...range {
     var factors = findAllFactors(i)
     // walk through all the factors for the current number
     for (factor, amount) in factors {
@@ -53,9 +54,9 @@ for var i = 2; i <= range; i++ {
 // Multiply all these primes together by their given amount.
 var number = 1
 for (prime, amount) in primefactors {
-    for var i = 0; i < amount; i++ {
+    for i in 0..<amount {
         number *= prime
     }
 }
 
-println(number)
+print(number)

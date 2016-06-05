@@ -21,19 +21,12 @@ func isPalindrome(number: Int) -> Bool {
 let range = 999
 var palindromes = [Int]()
 
-for var a = range; a > 0; a-- {
-    for var b = range; b > 0; b-- {
+for a in (1...range).reverse() {
+    for b in (1...range).reverse() {
         if isPalindrome(a * b) {
             palindromes.append(a * b)
         }
     }
 }
 
-var biggest = 0
-for i in palindromes {
-    if i > biggest {
-        biggest = i
-    }
-}
-
-println(biggest)
+print(palindromes.sort().last!)

@@ -4,7 +4,7 @@
 
 extension Int {
     func isPrime() -> Bool {
-        for var i = 2; i < self; i++ {
+        for i in 2 ..< self {
             if self % i == 0 {
                 return false
             }
@@ -17,15 +17,15 @@ var num = 600851475143
 var factors = [Int]()
 
 while num >= 2 {
-    for i in 2...num {
+    for i in 2 ... num {
         if i.isPrime() && num % i == 0 {
-            println("\(num) / \(i)")
+            print("\(num) / \(i)")
             num /= i
-            println(num)
+            print("= \(num)")
             factors.append(i)
             break
         }
     }
 }
 
-println(factors)
+print(factors)

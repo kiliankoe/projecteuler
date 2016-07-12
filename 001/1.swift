@@ -3,12 +3,8 @@
 //
 // Find the sum of all the multiples of 3 or 5 below 1000.
 
-var sum = 0
-
-for i in 0..<1000 {
-    if i % 3 == 0 || i % 5 == 0 {
-        sum += i
-    }
-}
+let sum = (0..<1000)
+    .filter { $0 % 3 == 0 || $0 % 5 == 0 }
+    .reduce(0, combine: +)
 
 print(sum)

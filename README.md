@@ -6,6 +6,8 @@ These are my solutions for the problems from [Project Euler](http://projecteuler
 
 There's also a few similar problems on [4Clojure](http://www.4clojure.com/user/kiliankoe) specifically for... well... Clojure.
 
+For something very similar, check out [Exercism](http://exercism.io). I also threw my solutions from there into a repo [here](https://github.com/kiliankoe/exercism).
+
 ### C
 
 Should compile with probably any C compiler out there and the most standard flags and whatnot. Simple stuff.

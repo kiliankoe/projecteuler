@@ -8,10 +8,7 @@
 
 extension Int {
     func isEven() -> Bool {
-        if self % 2 == 0 {
-            return true
-        }
-        return false
+        return self % 2 == 0
     }
 }
 
